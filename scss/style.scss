@@ -4,6 +4,7 @@
 // main
 main {
   height: 100vh;
+  overflow: hidden;
   background: var.$DarkCyan;
   display: flex;
   align-items: center;
