@@ -24,6 +24,7 @@ main {
   .container {
     padding-inline: 16px;
     margin-inline: auto;
+    z-index: 1;
     .card {
       background: white;
       height: 380px;
