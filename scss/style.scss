@@ -1,0 +1,90 @@
+@use "variables" as var;
+@use "globals";
+
+// main
+main {
+  height: 100vh;
+  background: var.$DarkCyan;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .container {
+    padding-inline: 16px;
+    margin-inline: auto;
+    .card {
+      background: white;
+      height: 380px;
+      border-radius: 15px;
+      overflow: hidden;
+      .img {
+        margin-bottom: 80px;
+        background-image: url(../images/bg-pattern-card.svg);
+        position: relative;
+        width: 100%;
+        height: 140px;
+        left: 0;
+        top: 0;
+        img {
+          position: absolute;
+          bottom: -30%;
+          left: 50%;
+          transform: translateX(-50%);
+          border-radius: 50%;
+        }
+      }
+      .card-body {
+        text-align: center;
+        position: relative;
+        bottom: 0;
+        h2 {
+          display: inline;
+          font-size: 17px;
+          margin-right: 10px;
+          word-spacing: 1px;
+        }
+        span {
+          font-size: 18px;
+          color: var.$DarkCyan;
+        }
+        p {
+          font-size: 16px;
+          letter-spacing: -1px;
+          margin-top: 8px;
+          margin-bottom: 20px;
+          color: var.$DarkCyan;
+        }
+        hr {
+          background-color: var.$DarkCyan;
+          margin-bottom: 25px;
+        }
+      }
+      .card-footer {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        .stats {
+          text-align: center;
+          h3 {
+            font-size: 16px;
+            margin-bottom: 5px;
+          }
+          p {
+            font-size: 12px;
+            color: var.$DarkCyan;
+          }
+        }
+      }
+    }
+    //
+    .attribution {
+      padding: 1em;
+      font-size: 11px;
+      text-align: center;
+      a {
+        color: hsl(228, 45%, 44%);
+      }
+    }
+  }
+}
+
+// main
